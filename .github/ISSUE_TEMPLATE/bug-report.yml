@@ -1,0 +1,26 @@
+name: "\U0001F41E Bug report"
+description: Create a report to help us improve Shikigami Studio
+labels: ['triage']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please carefully read the contribution docs before creating a bug report
+        👉 https://github.com/shikigamistudio/.github/blob/main/docs/CONTRIBUTING.md
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is. If you are want to ask a question instead, then use the [discussion forum](https://github.com/adonisjs/core/discussions).
+      placeholder: Bug description
+    validations:
+      required: true
+  - type: input
+    id: reproduction-repo
+    attributes:
+      label: Reproduction repo
+      description: Link to the Reproduction repo that we can use to reproduce the issue
+      placeholder: Optional, but recommended
+    validations:
+      required: false
